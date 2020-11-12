@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function storeName(){
+            username = document.getElementById("username").value;
+            localStorage.setItem('uname',username);
+            localStorage.setItem('message','have a great day');
+            document.myform.submit();
+        }
+    </script>
+</head>
+<body>
+    <form action="localdemo2.html" name="myform">
+        Name<input type="text" id="username">
+        <input type="button" value="Save" onclick="storeName()">
+        <div id="myid"></div>
+    </form>
+</body>
+</html>

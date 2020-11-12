@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElement Demo</title>
+    <script>
+        function sayHello(){
+            uname = document.getElementById("username").value;
+            city = document.getElementById("city").value;
+            document.getElementById("mydiv").innerHTML="Hey there "+uname;
+            document.getElementById("mypara").innerHTML="Welcome to "+city;
+        }
+    </script>
+</head>
+<body>
+    Enter Name<input type="text" id="username"><br>
+    Enter City<input type="text" id="city"><br>
+    <input type="button" value="Click here" onclick="sayHello()">
+    <div id="mydiv" style="background-color: rgb(253, 249, 18);"></div>
+    <p id="mypara" style="background-color:rgb(75, 207, 49);"></p>
+</body>
+</html>

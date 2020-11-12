@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <title>Book Client</title>
+    <script>
+        $(document).ready(function(){
+            $('#allbooks').click(function(){
+                var url = 'http://localhost:3000/showBooks';
+                $.get(url,function(data,status){
+                    data.forEach(book => {
+                        var str='';
+                        for(const prop in book){
+                            str+=prop+' '+book[prop]+' '+'<br>';
+                        }
+                    $('#mydiv').append(str).append('<br>');
+                        
+                    });
+                })
+            });
+            $('#authbutton').click(function(){
+                var url ='http://localhost:3000/showByAuthor';
+                var authchoice = $('#author').val();
+                $.get(url,{author:authchoice},function(data,status){
+                    data.forEach(book=>{
+                        var str='';
+                        for(const prop in book){
+                            str+=prop+' '+book[prop]+' '+'<br>';
+                        }
+                        $('#mydiv').append(str).append('<br>');
+                    })
+                });
+ 
+            });
+            $('#catbutton').click(function(){
+                var url ='http://localhost:3000/showByCategory';
+                var catchoice = $('#category').val();
+                $.get(url,{category:catchoice},function(data,status){
+                    data.forEach(book=>{
+                        var str='';
+                        for(const prop in book){
+                            str+=prop+' '+book[prop]+' '+'<br>';
+                        }
+                        $('#mydiv').append(str).append('<br>');
+                    })
+                });
+ 
+            });
+            
+        })
+    </script>
+</head>
+<body>
+ <button id="allbooks">Show Books</button><br>
+ <input type="text" id="author">
+ <button id="authbutton">Search By Author</button><br>
+ <input type="text" id="category">
+ <button id="catbutton">Search By Category</button><br> 
+ <div id="mydiv"></div>  
+</body>
+</html>

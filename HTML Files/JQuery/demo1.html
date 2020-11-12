@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!-- <script>
+        function show(){
+            var city1 = document.getElementById("city").value;
+            var name1 = document.getElementById("username").value;
+            document.getElementById("display").innerHTML="welcome"+" "+city1+" "+name1;
+        }
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $('#show').click(function(){
+                username = $('#username').val();
+                city = $('#city').val();
+                $('#myid').html('Welcome '+username+' from '+city);
+            });            
+        });
+    </script> -->
+    <script>
+        $(document).ready(function(){
+            $('show').click(function(){
+                $.get("hello.txt",function(data,status){
+                    $('#myid').html('<b>'+data+'</b>');
+                    console.log(status);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Enter Name:: <input type="text" id="username"><br>
+    Enter City:: <input type="text" id="city"><br> -->
+    <button id="show">Show</button>
+    <div id = "myid"></div>
+</body>
+</html>

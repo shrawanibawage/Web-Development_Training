@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Prompt</title>
+    <script>
+        // function call(){
+        //     if(confirm("You have unsaved messages remaining!")){
+        //         alert("Bye!!!");
+        //         document.write()
+        //     }
+        //     else{
+        //         alert("Thanks for continuing!!")
+        //     }
+        // }
+        function validateform(){
+            if(document.getElementById("username").value==""){
+                alert("enter your name::");
+                document.myform.uname.focus();
+            }else if(document.getElementById("password").value==""){
+                alert("enter your password::");
+                document.myform.pass.focus();
+            }else if(document.getElementById("gen1").checked=="" && document.getElementById("gen2").checked==""){
+                alert("enter gender");
+                document.myform.gender[0].focus();
+            }else{
+                alert("You are registered!");
+                document.myform.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <a href="http://www.google.com"
+    onclick = "return confirm('Do you want to continue')">Click here...</a> -->
+    <form action="success.html" name="myform">
+        Name<input type="text" name="uname" id="username"><br>
+        Password<input type="password" name="pass" id="password"><br>
+        Age<input type="text" name="age" id="age"><br>
+        Female<input type="radio" name="gender" id="gen1" value="female1">
+        Male<input type="radio" name="gender" id="gen2" value="male">
+        Submit<input type="button" name="submit" id="sub" onclick="validateform()">
+    </form>
+</body>
+</html>

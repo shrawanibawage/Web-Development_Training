@@ -1,0 +1,21 @@
+h2 {
+  color: green;
+  font-size: 20px;
+  background-color: orange;
+}
+
+h3 {
+  color: blue;
+  font-size: 20px;
+  background-color: yellow;
+}
+
+p {
+  border: green solid p width;
+  background-color: beige;
+}
+
+p#myid {
+  border: blue solid p#myid width;
+  background-color: yellow;
+}

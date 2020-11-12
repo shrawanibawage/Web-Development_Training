@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Datalist</h2>
+    <input list="city" name="mcity"/>
+    <datalist id="city">
+        <option value="Bengaluru"></option>
+        <option label="Chennai"></option>
+        <option value="Pune"></option>
+        <option value="Mumbai"></option>
+    </datalist>
+    <form action="basic.html" method="get">
+    
+        Username <input type="text" name="fname" value="Ram" readonly /><br />
+        Name: <input type="text" name="name" required /><br />
+        Company: <input type="text" name="company" value="Shristi" disabled /><br />
+        Age: <input type="number" name="age" required min="18" max="80" step="2"/><br />
+        Phone<input type="tel" pattern="[0-9]{10}" name="phone"><br>
+        Date<input type="date"  name="date" min="2016-12-31" max="2017-06-30"><br> 
+        Month<input type="month" placeholder="032001" name="month" min="2017-01" max="2017-06"><br>
+        Range <input type="range" name="num1" value="90"  /> 
+        Date-Time<input type="datetime-local" name="datetime"><br>
+        Email<input type="email" name="email" required><br>
+        Color<input type="color" name="color"><br>     
+        <input type="submit">
+    </form>
+
+    <form action="success_msg.html" method="get" id="userform">
+        Enter Name::
+        <input type="name" name="username" required/><br/>
+        <input type="submit" value="Add" formtarget="_blank"/>
+        <input type="submit" value="AddwithoutValidation" formnovalidate/>
+        <input type="submit" value="Edit" formaction="demo1.html" formmethod="POST"/>
+    </form>
+
+    <h1>Video</h1>
+    <!-- <video id="melon_husk" src="https://www.youtube.com/watch?v=ewS5GuMjtgo" height="450" width="400" controls></video> -->
+    <iframe width="789" height="444" src="https://www.youtube.com/embed/ewS5GuMjtgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <!-- <video width="450" height="" controls autoplay>
+        <source src="https://www.youtube.com/watch?v=ewS5GuMjtgo" type="video/mp4">
+        <source src="https://www.youtube.com/watch?v=ewS5GuMjtgo" type="video/ogg">
+    </video> -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+h2 {
+  background-color: red;
+  color: blue;
+  font-size: 20pc;
+}
+
+p {
+  background-color: orange;
+  color: cyan;
+  font-size: 20pc;
+}
+
+h2 {
+  background-color: orange;
+}

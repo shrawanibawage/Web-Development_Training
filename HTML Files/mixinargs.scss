@@ -1,0 +1,21 @@
+@mixin header_style($color,$font,$bgcolor){
+    color: $color;
+    font-size: $font;
+    background-color: $bgcolor;  
+}
+@mixin border_style($color:green,$bgcolor,$width:2px) {
+    border:$color solid &width;
+    background-color: $bgcolor;    
+}
+h2{
+    @include header_style(green,20px,orange)
+}
+h3{
+    @include header_style(blue, 20px, yellow)
+}
+p{
+    @include border_style($bgcolor:beige)
+}
+p#myid{
+    @include border_style(blue, yellow, 4px)
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DEMO</title>
+</head>
+<body>
+    <fieldset>
+        <legend align="center">Demo Form</legend>
+    <table cellpadding=10 cellspacing=10 align="center">
+    <form action="success_msg.html" method="post" name="myform">
+        <tr>
+        <td>Enter Name::</td>
+        <td><input type="text" name="username" id="password" placeholder="Enter name::" required/></td></br>
+        </tr>
+        <tr>
+        <td>Enter Password::</td>
+        <td><input type="password" name="password" id="password" placeholder="Enter password::" required/></td></br>
+        </tr>
+        <tr>
+        <td>Gender::</td>
+        <td><input type="radio" name="r1" value="Male" required>Male
+        <input type="radio" name="r1" value="Female">Female
+        </td><br/>
+        </tr>
+        <tr>
+        <td>Hobbies::</td>
+        <td><input type="checkbox" name="hobby" value="0">Sports
+        <input type="checkbox" name="hobby" value="1">Singing
+        <input type="checkbox" name="hobby" value="2">Dancing
+        <input type="checkbox" name="hobby" value="3">Drawing
+        </td><br/>
+        </tr>
+        <tr>
+        <td>Select Language::</td>
+        <td><input list="lang" name="mlang" required/>
+            <datalist id="lang">
+                <option value="JAVA">JAVA</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="C++">C++</option>
+                <option value="HTML">HTML</option>
+            </datalist>
+        </select>
+        </td><br/>
+        </tr>
+        <tr>
+            <td>Date of birth(DoB)::</td>
+            <td><input type="date"  name="date" min="1900-01-01" max="2020-10-26" required><br></td>
+        </tr>
+        <tr>
+            <td><input type="Submit" value="Register"/></td>
+            <td><input type="Reset" value="Clear"/></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

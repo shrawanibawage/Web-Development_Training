@@ -1,0 +1,26 @@
+[
+    {
+        "title":"JAVA in action",
+        "author":"Kathy",
+        "price":1000,
+        "category":"Tech"
+    },
+    {
+        "title":"Laws of Robotics",
+        "author":"Issac Asimov",
+        "price":1000,
+        "category":"Science Fiction"
+    },
+    {
+        "title":"Percy Jackson",
+        "author":"Rick Riordan",
+        "price":1000,
+        "category":"Fiction"
+    },
+    {
+        "title":"Artemis Fowl",
+        "author":"Eoin Colfer",
+        "price":1000,
+        "category":"Fiction"
+    }
+]

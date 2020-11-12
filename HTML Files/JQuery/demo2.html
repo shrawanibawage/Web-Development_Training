@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#mybutton').click(function(){
+            $.get ("hello.txt" , function(data,status){
+                $('#mydiv').html('<b>'+data+'</b>');
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+    <button id="mybutton">Show Messages</button>
+    <div id="mydiv"></div>    
+</body>
+</html>

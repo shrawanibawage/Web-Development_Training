@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script>
+        var uname = prompt('Enter username','Name');
+        var ppl = ['Suraj', 'Shweta', 'Tejasvi'];
+        for(var i=0;i<3;i++)
+        {
+            if(uname==ppl[i])
+            {
+                alert('User already exists!'); 
+                var flag=1;
+                break;
+            }
+        }
+        ppl.push(uname);
+        if(flag!=1){
+            alert('User added successfully!');
+            document.write("Updated list:<br>"+ppl);
+        }
+        
+       
+  </script>
+</head>
+<body>
+</body>
+</html>

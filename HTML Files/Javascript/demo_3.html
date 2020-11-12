@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var local = 20;
+        global = 90;
+        function checkData(){
+            console.log(local);
+            console.log(global);
+            var inlocal = 'local inside func';
+            inglobal = 'global inside func';
+        }
+        checkData();
+        console.log(inglobal);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+            sampleText = document.getElementById("comments").value;
+            document.getElementById("mydiv").innerHTML=sampleText;
+        }
+    </script>
+</head>
+<body>
+    Enter Comments:<textarea id="comments" onkeyup="sayHello()"></textarea><br>
+    <div id="mydiv" style="background-color: rgb(253, 249, 18);"></div>
+</body>
+</html>
